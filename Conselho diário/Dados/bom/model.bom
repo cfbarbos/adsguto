@@ -1,0 +1,48 @@
+
+package com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados;
+
+
+class PrevisãoDoTempo
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "previsãoDoTempo"
+        #de.generated
+{
+    boolean alertaDeTempestade
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "alertaDeTempestade"
+                #update;
+    long previsãoDeChuva
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "previsãoDeChuva"
+                #update;
+    com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura temperatura
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "temperatura"
+                #update;
+    PrevisãoDoTempo(boolean alertaDeTempestade, long previsãoDeChuva, com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura temperatura)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    PrevisãoDoTempo()
+                #dataio.default;
+}
+
+class Temperatura
+        extends java.lang.Enum
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "temperatura"
+        #de.generated
+{
+    domain {static caloroso, static frio, static quente}
+    static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura caloroso
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "caloroso";
+    static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura frio
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "frio";
+    static final readonly com.ibm.ads.samples.portuguese.conselho_di0x00e1rio.dados.Temperatura quente
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "quente";
+}
+
