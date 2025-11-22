@@ -1,0 +1,14 @@
+{
+  "name" : "ADS Sample Machine Learning Provider",
+  "type" : "OPS",
+  "description" : "",
+  "updateTime" : 1675955306492,
+  "authInfo" : {
+    "authType" : "NONE"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "OPS",
+    "mlUrl" : "https://ads-ml.ads.apps.ads-stable.cp.fyre.ibm.com"
+  },
+  "version" : "V1"
+}
