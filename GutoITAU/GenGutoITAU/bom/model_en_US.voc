@@ -1,0 +1,37 @@
+
+# _096300631.gutodemo002.gutoitau.gengutoitau.Error
+_096300631.gutodemo002.gutoitau.gengutoitau.Error#concept.label = Output error
+_096300631.gutodemo002.gutoitau.gengutoitau.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+_096300631.gutodemo002.gutoitau.gengutoitau.Error.code#phrase.action = set the code of {this} to {code}
+_096300631.gutodemo002.gutoitau.gengutoitau.Error.code#phrase.navigation = {code} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Error.message#phrase.action = set the message of {this} to {message}
+_096300631.gutodemo002.gutoitau.gengutoitau.Error.message#phrase.navigation = {message} of {this}
+
+# _096300631.gutodemo002.gutoitau.gengutoitau.Input
+_096300631.gutodemo002.gutoitau.gengutoitau.Input#concept.label = ML model input
+_096300631.gutodemo002.gutoitau.gengutoitau.Input.Input(java.lang.String,java.lang.String)#phrase.navigation = a new {ML model input} where {0, topic} {1, variable 2} 
+_096300631.gutodemo002.gutoitau.gengutoitau.Input.topic#phrase.action = set the topic of {this} to {topic}
+_096300631.gutodemo002.gutoitau.gengutoitau.Input.topic#phrase.navigation = {topic} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Input.variable_2#phrase.action = set the variable 2 of {this} to {variable 2}
+_096300631.gutodemo002.gutoitau.gengutoitau.Input.variable_2#phrase.navigation = {variable 2} of {this}
+
+# _096300631.gutodemo002.gutoitau.gengutoitau.Output
+_096300631.gutodemo002.gutoitau.gengutoitau.Output#concept.label = ML model output
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.Output(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,_096300631.gutodemo002.gutoitau.gengutoitau.Error)#phrase.navigation = a new {ML model output} where {0, generated text} {1, generated token count} {2, input token count} {3, stop reason} {4, error} 
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.error#phrase.action = set the error of {this} to {error}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.error#phrase.clearer = clear the error of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.error#phrase.navigation = {error} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedText#phrase.action = set the generated text of {this} to {generated text}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedText#phrase.navigation = {generated text} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedTokenCount#phrase.action = set the generated token count of {this} to {generated token count}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedTokenCount#phrase.addition_setter = add {generated token count} to the generated token count of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedTokenCount#phrase.navigation = {generated token count} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.generatedTokenCount#phrase.subtraction_setter = subtract {generated token count} from the generated token count of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.inError()#phrase.navigation = {this} is in error
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.inputTokenCount#phrase.action = set the input token count of {this} to {input token count}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.inputTokenCount#phrase.addition_setter = add {input token count} to the input token count of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.inputTokenCount#phrase.navigation = {input token count} of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.inputTokenCount#phrase.subtraction_setter = subtract {input token count} from the input token count of {this}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.run(_096300631.gutodemo002.gutoitau.gengutoitau.Input)#phrase.navigation = predict({0})
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.stopReason#phrase.action = set the stop reason of {this} to {stop reason}
+_096300631.gutodemo002.gutoitau.gengutoitau.Output.stopReason#phrase.navigation = {stop reason} of {this}

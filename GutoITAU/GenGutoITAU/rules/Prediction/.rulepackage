@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Prediction</name>
+  <uuid>b3a97745-843e-49d9-b45e-72382f5fc5cb</uuid>
+</ilog.rules.studio.model.base:RulePackage>
