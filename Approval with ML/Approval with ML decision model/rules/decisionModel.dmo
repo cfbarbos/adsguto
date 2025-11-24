@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
   <uuid>0acb7853-dd08-4a70-bf30-ce32cfc2f95a</uuid>
   <locale>en_US</locale>
-  <definition>
-        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
     <extensionElements>
         <description xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">Determine loan approval based on multiple criteria, such as credit score, income, etc.</description>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
@@ -181,7 +181,7 @@
             <requiredInput href="#node_9"/>
         </informationRequirement>
     </decision>
-    <decision id="node_11" name="Approval">
+    <decision id="node_11" name="Approval2">
         <description>Decide if the loan is approved or rejected</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
@@ -191,7 +191,7 @@
                 <input bomType="com.ibm.ads.samples.banking.approval_with_ml.data.RiskProbabilities" collection="false" name="Risk Score"/>
                 <input bomType="java.time.LocalDate" collection="false" name="current time"/>
                 <input bomType="com.ibm.ads.samples.banking.approval_with_ml.data.Grade" collection="false" name="Grade"/>
-                <output bomType="com.ibm.ads.samples.banking.approval_with_ml.data.Approval" collection="false" name="Approval"/>
+                <output bomType="com.ibm.ads.samples.banking.approval_with_ml.data.Approval" collection="false" name="Approval2"/>
                 <rule defaultRule="false" href="node_11/too%20high%20risk.drl" kind="BusinessRule" name="too high risk"/>
                 <rule defaultRule="false" href="node_11/bad%20score.drl" kind="BusinessRule" name="bad score"/>
                 <rule defaultRule="false" href="node_11/risky%20grade.drl" kind="BusinessRule" name="risky grade"/>
@@ -205,7 +205,7 @@
                 <rule defaultRule="true" href="node_11/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_11_ii" name="Approval" typeRef="com.ibm.ads.samples.banking.approval_with_ml.data.Approval"/>
+        <variable id="node_11_ii" name="Approval2" typeRef="com.ibm.ads.samples.banking.approval_with_ml.data.Approval"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -273,5 +273,5 @@
         </encapsulatedLogic>
     </businessKnowledgeModel>
 </definitions>
-    </definition>
+</definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

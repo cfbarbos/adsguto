@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>genGutoITAU</name>
-  <uuid>e652775d-7450-45f2-9bb3-b9dfc1d1fe6d</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to the stop reason of 'ML model invocation' ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>
